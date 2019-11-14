@@ -38,7 +38,7 @@ class Emitter {
             toSend.push(destinationSchema.convertForClient());
         });
 
-        this.socket.emit("destinationsFound",toSend);
+        this.emit("destinationsFound",toSend);
     }
 
     async onNewDestination(data) {

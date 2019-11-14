@@ -1,4 +1,5 @@
 const Destination = require("../../../App/Models/Destination");
+const DestinationSchema = require("../../../App/Models/Schemas/DestinationSchema");
 const configDB = require("../../../Config/database");
 const mongoose = require("mongoose");
 var assert = require('chai').assert;
@@ -62,6 +63,20 @@ describe('Destination', function () {
         } catch (e) {
             assert.notExists(e, e);
         }
+    });
+
+    it('fill  Attributes', () => {
+        let d = new DestinationSchema();
+        d.fillAttributes(data);
+        assert.equal(d.name, data.name);
+        assert.equal(d.numUsers, data.numUsers);
+        assert.equal(d.destinationPoint.coordinates[1], data.destinationLatitude);
+        assert.equal(d.destinationPoint.coordinates[0], data.destinationLongitude);
+        assert.equal(d.originPoint.coordinates[1], data.originLatitude);
+        assert.equal(d.originPoint.coordinates[0], data.originLongitude);
+        assert.equal(d.chatId, data.chatId);
+        assert.equal(d.createBy, data.userId);
+        //assert.equal(d.destinationId, destinationSchema._id);
     });
 
     it("add a participant two times", async () => {
