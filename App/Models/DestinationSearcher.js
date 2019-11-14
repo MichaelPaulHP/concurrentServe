@@ -55,7 +55,7 @@ class DestinationSearcher {
                     maxDistance: MAX_DISTANCE,
                     query: { isActive: true },
                     spherical: true,
-                    key: "destinationPoint",
+                    
                 }
             }
 

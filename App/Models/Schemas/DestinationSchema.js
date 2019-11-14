@@ -67,7 +67,7 @@ var DestinationSchema = new schema({
 
 }, {timestamps: true});
 
-DestinationSchema.index({destinationPoint:"2dsphere",originPoint:"2dsphere"});
+DestinationSchema.index({destinationPoint:"2dsphere"});
 /*
     public String destinationId;
     public String name;
