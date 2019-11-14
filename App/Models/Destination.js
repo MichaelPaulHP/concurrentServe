@@ -48,7 +48,7 @@ class Destination {
             let destination = new DestinationSchema();
             destination.fillAttributes(data);
             destination.numUsers=1;
-            destination.createBy=user.googleId;
+            destination.createBy=user.userId;
             destination.participants.push(user);
             const destinationSaved = await DestinationSchema.create(destination);
             return destinationSaved;

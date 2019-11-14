@@ -65,7 +65,7 @@ describe('Destination', function () {
         }
     });
 
-    it('fill  Attributes', () => {
+    it('fill  Attributes', async () => {
         let d = new DestinationSchema();
         d.fillAttributes(data);
         assert.equal(d.name, data.name);
@@ -77,6 +77,8 @@ describe('Destination', function () {
         assert.equal(d.chatId, data.chatId);
         assert.equal(d.createBy, data.userId);
         //assert.equal(d.destinationId, destinationSchema._id);
+        let destination= await DestinationSchema.create(d);
+        assert.exists(destination);
     });
 
     it("add a participant two times", async () => {

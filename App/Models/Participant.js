@@ -108,7 +108,7 @@ class Participant {
             participantSchema.name=name;
             let participantSchemaSaved= await ParticipantSchema.create(participantSchema);
 
-            return new Participant(googleId);
+            return new Participant(googleId,name);
         }catch (e) {
             throw e;
         }
