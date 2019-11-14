@@ -41,6 +41,7 @@ exports.saveUser =async function(req,res){
 
     try {
         let params=req.body;
+	console.log(params);
         let user = new UserAuthSchema();
         user.name=params.userName;
         user.email=params.email;
