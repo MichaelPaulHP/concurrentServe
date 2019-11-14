@@ -43,6 +43,7 @@ class Emitter {
 
     async onNewDestination(data) {
         try {
+		console.log(data);
             let destinationSchema = await
                 this.participant.createMyDestination(data);
             await this.participant.addToMyDestinations(destinationSchema);
