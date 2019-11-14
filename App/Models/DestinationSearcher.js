@@ -75,7 +75,7 @@ class DestinationSearcher {
         try {
 
             //let destinations = await DestinationSchema.find(conditions);
-            let destinations = await DestinationSchema.aggregate([conditionAggregate,conditionsAggregateOrigin]);
+            let destinations = await DestinationSchema.aggregate([conditionAggregate]);
             return destinations;
         } catch (e) {
             throw e;
