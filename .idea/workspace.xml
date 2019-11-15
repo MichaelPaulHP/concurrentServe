@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b62d463-8356-4ec3-a37e-7edf6214d038" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App/Models/Destination.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Destination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/App/Models/Destination.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/App/Models/Destination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Concurrent.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Concurrent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Emitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Emitter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/App/Models/Participant.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/App/Models/Participant.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,12 +18,39 @@
   </component>
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Models/Participant.js">
+        <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="300">
+              <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="96" column="27" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -55,19 +84,19 @@
         <option value="$PROJECT_DIR$/App/Models/Schemas/ParticipantSchema.js" />
         <option value="$PROJECT_DIR$/test/Config/MongoDB.js" />
         <option value="$PROJECT_DIR$/App/Models/Interactor.js" />
-        <option value="$PROJECT_DIR$/App/Models/Concurrent.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/test/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/test/App/Models/DestinationSearcher.js" />
         <option value="$PROJECT_DIR$/App/Models/DestinationSearcher.js" />
         <option value="$PROJECT_DIR$/App/Models/Schemas/UserSchema.js" />
         <option value="$PROJECT_DIR$/App/Controllers/UserController.js" />
-        <option value="$PROJECT_DIR$/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/testSockt.html" />
         <option value="$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js" />
-        <option value="$PROJECT_DIR$/App/Models/Emitter.js" />
         <option value="$PROJECT_DIR$/test/App/Models/Destination.js" />
         <option value="$PROJECT_DIR$/App/Models/Destination.js" />
+        <option value="$PROJECT_DIR$/App/Models/Participant.js" />
+        <option value="$PROJECT_DIR$/test/App/Models/Participant.js" />
+        <option value="$PROJECT_DIR$/App/Models/Concurrent.js" />
+        <option value="$PROJECT_DIR$/App/Models/Emitter.js" />
       </list>
     </option>
   </component>
@@ -173,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.Destination.fill  Attributes">
+  <component name="RunManager" selected="Mocha.Participant Test.get my destinations">
     <configuration name="Destination Searcher" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -220,22 +249,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Destination.add a participant two times" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/Destination.js</test-file>
-      <test-names>
-        <name value="Destination" />
-        <name value="add a participant two times" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Destination.fill  Attributes" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -249,6 +262,22 @@
       <test-names>
         <name value="Destination" />
         <name value="fill  Attributes" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Participant Test.get my destinations" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/App/Models/Participant.js</test-file>
+      <test-names>
+        <name value="Participant Test" />
+        <name value="get my destinations" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -266,11 +295,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Participant Test.get my destinations" />
         <item itemvalue="Mocha.Destination.fill  Attributes" />
         <item itemvalue="Mocha.Destination Searcher.when exist a destination" />
         <item itemvalue="Mocha.Destination Searcher" />
         <item itemvalue="Mocha.Destination" />
-        <item itemvalue="Mocha.Destination.add a participant two times" />
       </list>
     </recent_temporary>
   </component>
@@ -295,44 +324,45 @@
       <workItem from="1573599189065" duration="5174000" />
       <workItem from="1573612079872" duration="10798000" />
       <workItem from="1573671254948" duration="7015000" />
-      <workItem from="1573768170304" duration="2009000" />
+      <workItem from="1573768170304" duration="2571000" />
+      <workItem from="1573777862384" duration="4062000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Destination_Searcher_when_exist_a_destination - 2019.11.12 at 23h 51m 25s.xml">
-      <configuration name="Destination Searcher.when exist a destination" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 23m 26s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_Searcher_when_exist_a_destination - 2019.11.12 at 23h 59m 28s.xml">
-      <configuration name="Destination Searcher.when exist a destination" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 23m 37s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_Searcher_when_exist_a_destination - 2019.11.13 at 00h 01m 17s.xml">
-      <configuration name="Destination Searcher.when exist a destination" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 24m 23s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_Searcher_when_exist_a_destination - 2019.11.13 at 00h 16m 06s.xml">
-      <configuration name="Destination Searcher.when exist a destination" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 24m 36s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_Searcher_when_exist_a_destination - 2019.11.13 at 00h 21m 06s.xml">
-      <configuration name="Destination Searcher.when exist a destination" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 32m 38s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_fill__Attributes - 2019.11.14 at 16h 55m 09s.xml">
-      <configuration name="Destination.fill  Attributes" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 34m 29s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_fill__Attributes - 2019.11.14 at 16h 55m 31s.xml">
-      <configuration name="Destination.fill  Attributes" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 35m 10s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_fill__Attributes - 2019.11.14 at 16h 57m 46s.xml">
-      <configuration name="Destination.fill  Attributes" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 45m 51s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_fill__Attributes - 2019.11.14 at 16h 58m 44s.xml">
-      <configuration name="Destination.fill  Attributes" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 46m 20s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Destination_fill__Attributes - 2019.11.14 at 17h 18m 32s.xml">
-      <configuration name="Destination.fill  Attributes" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 46m 34s.xml">
+      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134733000" />
+    <option name="totallyTimeSpent" value="139357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -349,16 +379,16 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.27941176" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.34112793" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.34087694" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3287483" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.28198075" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.281471" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.427157" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -391,17 +421,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js</url>
-          <line>101</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/App/Controllers/LocationController.js">
@@ -465,13 +484,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
-          <caret line="112" column="21" lean-forward="true" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Track.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -479,13 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -519,13 +524,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test Results - Destination.html" />
-    <entry file="file://$PROJECT_DIR$/testSockt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testSockt.html" />
     <entry file="file://$PROJECT_DIR$/App/Controllers/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -533,24 +532,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="193" column="49" lean-forward="true" selection-start-line="193" selection-start-column="49" selection-end-line="193" selection-end-column="49" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/App/Models/User.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/Destination.js">
+    <entry file="file://$PROJECT_DIR$/App/Models/Destination.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="47" column="40" lean-forward="true" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        <state relative-caret-position="481">
+          <caret line="118" column="66" selection-start-line="118" selection-start-column="66" selection-end-line="118" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -563,32 +551,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/User.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Destination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="118" column="66" selection-start-line="118" selection-start-column="66" selection-end-line="118" selection-end-column="66" />
+        <state relative-caret-position="300">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Participant.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="301">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Destination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="112" column="21" lean-forward="true" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="96" column="27" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
         </state>
       </provider>
     </entry>

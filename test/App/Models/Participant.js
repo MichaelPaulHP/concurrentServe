@@ -40,18 +40,18 @@ describe('Participant Test', function () {
     });
 
     beforeEach(async ()=>{
-        try {
+        /*try {
             this.enableTimeouts(false);
             this.timeout(10000);
 
-            let googleId=Math.random()+"2015242311";
-            participant=await Participant.createParticipant(googleId);
+            let googleId=" FAKE 2015242311";
+            participant=await Participant.createParticipant(googleId,googleId);
             // create a Destination
-            data.name=data.name+Math.random();
+            data.name="Fake";
             destinationSaved=await Destination.create(data);
         }catch (e) {
             console.log(e);
-        }
+        }*/
 
 
     });
@@ -87,7 +87,18 @@ describe('Participant Test', function () {
             assert.notExists(e,e);
         }
     });
+    it('get my destinations', async () => {
+        let partipant=new Participant("rDFKm9loKOTW04If5uGxpSurcKn1", "z@gmail.com");
 
+        let destination=await partipant.getMyDestinations();
+
+        //assert.isNotEmpty(destination);
+        let d=destination[0];
+        assert.exists(d._id);
+        assert.exists(d.originPoint);
+        assert.ok(d.numUsers>=1);
+
+    });
     it("join to destination fake",async ()=>{
         try {
             let destinationId="FAKE";

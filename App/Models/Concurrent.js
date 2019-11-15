@@ -7,11 +7,13 @@ class Concurrent {
         this.io = io;
         this.participants = [];
         io.on("connection", this.onConnect);
+
     }
 
     onConnect(socket) {
         console.log("new connection, sockedId: " + socket.id);
         let emiter = new Emitter(this.io, socket);
+
     }
 
 }

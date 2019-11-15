@@ -1,5 +1,7 @@
 const Participant = require("./Participant");
 const DestinationSearcher =require("./DestinationSearcher");
+const Destination =require("./Destination");
+
 class Emitter {
 
     constructor(io, socket) {
@@ -11,6 +13,7 @@ class Emitter {
         socket.on("newDestination", this.onNewDestination);
         socket.on("joinToDestination",this.onJoinToDestination);
         socket.on("getMyDestinations",this.onGetMyDestinations);
+        socket.on("disconnect",this.onDisconnect);
     }
 
     async init(data) {
@@ -33,17 +36,18 @@ class Emitter {
         let destinations= await
             DestinationSearcher.findDestination(origin,destination);
 
-        let toSend=[];
+
         destinations.forEach((destinationSchema)=>{
-            toSend.push(destinationSchema.convertForClient());
+
+            this.emit("destinationsFound",destinationSchema.convertForClient());
         });
 
-        this.emit("destinationsFound",toSend);
+
     }
 
     async onNewDestination(data) {
         try {
-		console.log(data);
+		    console.log(data);
             let destinationSchema = await
                 this.participant.createMyDestination(data);
             await this.participant.addToMyDestinations(destinationSchema);
@@ -78,16 +82,14 @@ class Emitter {
             let destinations = await
                 this.participant.getMyDestinations();
 
-            let destinationsToSend = [];
-            destinations.forEach((destination) => {
-                destinationsToSend.push(destination.convertForClient());
-                this.joinToRoom(destination._id);
+
+            destinations.forEach(async (destinationId) => {
+                let destinationSchema=await Destination.findById(destinationId);
+                this.emit("myDestinations", destinationSchema.convertForClient());
+                this.joinToRoom(destinationSchema._id);
             });
-
-            this.emit("myDestinations", destinationsToSend);
-
-        } catch (e) {
-            throw e;
+        } catch (error) {
+            this.emit("error", {error});
         }
     }
 
@@ -111,6 +113,9 @@ class Emitter {
         } catch (e) {
             throw e;
         }
+    }
+    onDisconnect(reason){
+        console.log("disconnect:" +this.participant.userId + " reason: " + reason);
     }
 
     emitToRoom(room, even, args) {
