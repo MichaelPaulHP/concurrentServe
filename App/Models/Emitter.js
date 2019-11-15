@@ -56,7 +56,7 @@ class Emitter {
 
             let toSend = destinationSchema.convertForClient();
             this.emit("newDestination", toSend);
-            this.joinToRoom(destinationSchema._id);
+            await this.joinToRoom(destinationSchema._id);
 
         } catch (error) {
             this.emit("error", {error});
@@ -67,7 +67,7 @@ class Emitter {
         let destinationId = data.destinationId;
         try {
             let destination = await this.participant.joinToDestination(destinationId);
-            this.joinToRoom(destinationId);
+            await this.joinToRoom(destinationId);
 
             this.emitToRoom(
                 destinationId,
@@ -83,19 +83,27 @@ class Emitter {
         try {
             let destinations = await
                 this.participant.getMyDestinations();
-
-            for(let destinationId of destinations){
+            console.log(destinations.length);
+            for(let i =0;i<destinations.length;i++){
+                let destinationId=destinations[i];
                 let destinationSchema=await Destination.findById(destinationId);
                 this.emit("myDestinations", destinationSchema.convertForClient());
-                this.joinToRoom(destinationSchema._id);
+                //await this.joinToRoom(destinationId);
             }
+            /*for(let destinationId of destinations){
+                let destinationSchema=await Destination.findById(destinationId);
+                this.joinToRoom(destinationId,null);
+                this.emit("myDestinations", destinationSchema.convertForClient());
+
+            }*/
 
             /*destinations.forEach(async (destinationId) => {
 
             });*/
 
         } catch (error) {
-            this.emit("error", {error});
+            //this.emit("error", {error});
+            console.log(error);
         }
     }
 
@@ -130,10 +138,16 @@ class Emitter {
 
     emit(even, args) {
         this.socket.emit(even, args);
+
     }
 
-    joinToRoom(destinationId) {
-        this.socket.join(destinationId)
+    async joinToRoom (destinationId) {
+        try {
+            await this.socket.join(destinationId)
+        }catch (e) {
+            throw e;
+        }
+
     }
 
 }

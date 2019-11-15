@@ -43,7 +43,9 @@ let server = app.listen(port);
 
 // init socketIO serve =========================================================
 let io = require("socket.io")(server);
-
+/*io.on("connection",(socket)=>{
+    socket.join("",)
+});*/
 
 // CONFIG FIREBASE =========================================================
 const firebaseConfig = require("./Config/firebase");

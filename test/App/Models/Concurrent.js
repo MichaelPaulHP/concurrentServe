@@ -37,7 +37,7 @@ describe('socket io client', function () {
 
     it('get my Destinations',async (done) => {
 
-        await socket.on("getMyDestinations",(data)=>{
+        await socket.on("myDestinations",(data)=>{
             console.log(data);
             assert.exists(data);
             assert.equal(data.userId,user.userId);
