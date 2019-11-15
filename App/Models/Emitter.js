@@ -84,7 +84,7 @@ class Emitter {
             let destinations = await
                 this.participant.getMyDestinations();
 
-            for(let destinationId in destinations){
+            for(let destinationId of destinations){
                 let destinationSchema=await Destination.findById(destinationId);
                 this.emit("myDestinations", destinationSchema.convertForClient());
                 this.joinToRoom(destinationSchema._id);
