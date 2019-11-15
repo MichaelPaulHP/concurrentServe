@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b62d463-8356-4ec3-a37e-7edf6214d038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Models/Concurrent.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Concurrent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Models/Emitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Emitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/App/Models/Participant.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/App/Models/Participant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,35 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="96" column="27" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="27" />
+            <state relative-caret-position="462">
+              <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -84,7 +57,6 @@
         <option value="$PROJECT_DIR$/App/Models/Schemas/ParticipantSchema.js" />
         <option value="$PROJECT_DIR$/test/Config/MongoDB.js" />
         <option value="$PROJECT_DIR$/App/Models/Interactor.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/test/App/Models/DestinationSearcher.js" />
         <option value="$PROJECT_DIR$/App/Models/DestinationSearcher.js" />
         <option value="$PROJECT_DIR$/App/Models/Schemas/UserSchema.js" />
@@ -96,6 +68,8 @@
         <option value="$PROJECT_DIR$/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/test/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/App/Models/Concurrent.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/test/App/Models/Concurrent.js" />
         <option value="$PROJECT_DIR$/App/Models/Emitter.js" />
       </list>
     </option>
@@ -202,22 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.Participant Test.get my destinations">
-    <configuration name="Destination Searcher" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/DestinationSearcher.js</test-file>
-      <test-names>
-        <name value="Destination Searcher" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Mocha.socket io client">
     <configuration name="Destination Searcher.when exist a destination" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -231,21 +190,6 @@
       <test-names>
         <name value="Destination Searcher" />
         <name value="when exist a destination" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Destination" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/Destination.js</test-file>
-      <test-names>
-        <name value="Destination" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -281,6 +225,36 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="socket connect" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/App/Models/Concurrent.js</test-file>
+      <test-names>
+        <name value="socket connect" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="socket io client" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/App/Models/Concurrent.js</test-file>
+      <test-names>
+        <name value="socket io client" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="test\App\Models\Destination.js" type="mocha-javascript-test-runner" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -295,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.socket io client" />
+        <item itemvalue="Mocha.socket connect" />
         <item itemvalue="Mocha.Participant Test.get my destinations" />
         <item itemvalue="Mocha.Destination.fill  Attributes" />
         <item itemvalue="Mocha.Destination Searcher.when exist a destination" />
-        <item itemvalue="Mocha.Destination Searcher" />
-        <item itemvalue="Mocha.Destination" />
       </list>
     </recent_temporary>
   </component>
@@ -325,32 +299,11 @@
       <workItem from="1573612079872" duration="10798000" />
       <workItem from="1573671254948" duration="7015000" />
       <workItem from="1573768170304" duration="2571000" />
-      <workItem from="1573777862384" duration="4062000" />
+      <workItem from="1573777862384" duration="8134000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 23m 26s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 23m 37s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 24m 23s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 24m 36s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 32m 38s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 34m 29s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 35m 10s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 45m 51s.xml">
       <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -360,9 +313,30 @@
     <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 46m 34s.xml">
       <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="socket_connect - 2019.11.14 at 21h 40m 48s.xml">
+      <configuration name="socket connect" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="socket_connect - 2019.11.14 at 21h 41m 35s.xml">
+      <configuration name="socket connect" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="socket_io_client - 2019.11.14 at 21h 57m 14s.xml">
+      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="socket_io_client - 2019.11.14 at 21h 58m 05s.xml">
+      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="socket_io_client - 2019.11.14 at 21h 59m 58s.xml">
+      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="socket_io_client - 2019.11.14 at 22h 03m 08s.xml">
+      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="socket_io_client - 2019.11.14 at 22h 03m 43s.xml">
+      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139357000" />
+    <option name="totallyTimeSpent" value="143429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,16 +353,16 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2835821" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.34087694" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.21923621" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3287483" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.281471" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.2545969" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.427157" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -481,9 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Track.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -516,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test Results - Destination.html" />
     <entry file="file://$PROJECT_DIR$/testSockt.html" />
     <entry file="file://$PROJECT_DIR$/App/Controllers/UserController.js">
@@ -549,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Participant.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -572,16 +529,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="112" column="21" lean-forward="true" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io-mock/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="96" column="27" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="27" />
-        </state>
+        <state relative-caret-position="-4800" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
@@ -591,17 +546,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Concurrent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="90" column="85" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+        <state relative-caret-position="462">
+          <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
         </state>
       </provider>
     </entry>

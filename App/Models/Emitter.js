@@ -36,11 +36,13 @@ class Emitter {
         let destinations= await
             DestinationSearcher.findDestination(origin,destination);
 
-
-        destinations.forEach((destinationSchema)=>{
-
+        for(let destinationSchema in destinations){
             this.emit("destinationsFound",destinationSchema.convertForClient());
-        });
+        }
+        /*destinations.forEach((destinationSchema)=>{
+
+
+        });*/
 
 
     }
@@ -82,12 +84,16 @@ class Emitter {
             let destinations = await
                 this.participant.getMyDestinations();
 
-
-            destinations.forEach(async (destinationId) => {
+            for(let destinationId in destinations){
                 let destinationSchema=await Destination.findById(destinationId);
                 this.emit("myDestinations", destinationSchema.convertForClient());
                 this.joinToRoom(destinationSchema._id);
-            });
+            }
+
+            /*destinations.forEach(async (destinationId) => {
+
+            });*/
+
         } catch (error) {
             this.emit("error", {error});
         }
