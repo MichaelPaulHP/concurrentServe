@@ -94,10 +94,10 @@ DestinationSchema.methods.convertForClient = function () {
         chatId: this.chatId,
         userId: this.createBy,
         dist:this.dist
-    };
-    */
+    };*/
+
 };
-DestinationSchema.methods.convertForClient = function (destinationSchema) {
+DestinationSchema.methods.convertForClient2 = function (destinationSchema) {
     return forClient(destinationSchema);
 };
 
@@ -176,8 +176,12 @@ DestinationSchema.methods.isInRangeArray = function (data,distance) {
     );
 };*/
 function forClient(destinationSchema){
-    return {
-        destinationId: destinationSchema._id,
+    let id=destinationSchema._id;
+    if(!id)
+        id=destinationSchema.id;
+
+    let data={
+        destinationId: id,
         name: destinationSchema.name,
         color: destinationSchema.color,
         numUsers: destinationSchema.numUsers,
@@ -189,6 +193,7 @@ function forClient(destinationSchema){
         userId: destinationSchema.createBy,
         dist:destinationSchema.dist,
     };
+    return data;
 }
 
 module.exports = mongoose.model('DestinationSchema', DestinationSchema);

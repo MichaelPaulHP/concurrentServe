@@ -43,7 +43,7 @@ class Emitter {
 
         for (let i = 0; i < destinations.length ; i++) {
             let destinationSchema =new DestinationSchema();
-            let toSend= destinationSchema.convertForClient(destinations[i]);
+            let toSend= destinationSchema.convertForClient2(destinations[i]);
             this.emit("destinationsFound",toSend);
         }
 
@@ -92,10 +92,10 @@ class Emitter {
             console.log(destinations.length);
 
             for (let i = 0; i < destinations.length; i++) {
-                let destinationId = destinations[i];
+                let destinationId = destinations[i]._id;
                 let destinationSchema = await Destination.findById(destinationId);
                 this.emit("myDestinations", destinationSchema.convertForClient());
-                this.joinToRoom("destinationId");
+                this.joinToRoom(destinationSchema._id);
             }
             /*for(let destinationId of destinations){
                 let destinationSchema=await Destination.findById(destinationId);
