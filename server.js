@@ -41,11 +41,7 @@ mongoose.connect(
 // start server =========================================================
 let server = app.listen(port);
 
-// init socketIO serve =========================================================
-let io = require("socket.io")(server);
-/*io.on("connection",(socket)=>{
-    socket.join("",)
-});*/
+
 
 // CONFIG FIREBASE =========================================================
 const firebaseConfig = require("./Config/firebase");
@@ -61,7 +57,7 @@ app.get("/", (req, res) => {
 
 // INIT concurrent  =========================================================
 let Concurrent =require("./App/Models/Concurrent");
-let concurrent= new Concurrent(io);
+let concurrent= new Concurrent(server);
 
 
 console.log("GG!");

@@ -1,6 +1,8 @@
+"use strict";
+
 const Participant = require("./Participant");
-const DestinationSearcher =require("./DestinationSearcher");
-const Destination =require("./Destination");
+const DestinationSearcher = require("./DestinationSearcher");
+const Destination = require("./Destination");
 
 class Emitter {
 
@@ -8,55 +10,53 @@ class Emitter {
         this.io = io;
         this.socket = socket;
         this.participant = new Participant("ee");//Participant.createParticipant("20215423");
-        socket.on("init", this.init);
-        socket.on("findDestinations", this.onFindDestinations);
-        socket.on("newDestination", this.onNewDestination);
-        socket.on("joinToDestination",this.onJoinToDestination);
-        socket.on("getMyDestinations",this.onGetMyDestinations);
-        socket.on("disconnect",this.onDisconnect);
+        socket.on("init",(data)=> this.init(data));
+        socket.on("findDestinations",(data)=> this.onFindDestinations(data));
+        socket.on("newDestination",(data)=> this.onNewDestination(data));
+        socket.on("joinToDestination",(data)=> this.onJoinToDestination(data));
+        socket.on("getMyDestinations",(data)=> this.onGetMyDestinations(data));
+        socket.on("disconnect",(reason)=> this.onDisconnect(reason));
+
     }
 
-    async init(data) {
+    init(data) {
+        // this is Socket
         let userName = data.userName;
         let userId = data.userId;
-        this.participant = new Participant(userId,userName);
-        console.log("Participant: "+userName+ " "+userId);
+        this.participant = new Participant(userId, userName);
+        console.log("Participant: " + userName + " " + userId);
+
     }
 
 
     async onFindDestinations(data) {
-        let origin={
-            latitude:data.originLatitude,
-            longitude:data.originLongitude
+        let origin = {
+            latitude: data.originLatitude,
+            longitude: data.originLongitude
         };
-        let destination={
-            latitude:data.destinationLatitude,
-            longitude:data.destinationLongitude
+        let destination = {
+            latitude: data.destinationLatitude,
+            longitude: data.destinationLongitude
         };
-        let destinations= await
-            DestinationSearcher.findDestination(origin,destination);
+        let destinations = await
+            DestinationSearcher.findDestination(origin, destination);
 
-        for(let destinationSchema in destinations){
-            this.emit("destinationsFound",destinationSchema.convertForClient());
+        for (let destinationSchema of destinations) {
+            this.emit("destinationsFound", destinationSchema.convertForClient());
         }
-        /*destinations.forEach((destinationSchema)=>{
-
-
-        });*/
-
-
     }
 
     async onNewDestination(data) {
         try {
-		    console.log(data);
+            console.log(data);
             let destinationSchema = await
                 this.participant.createMyDestination(data);
+
             await this.participant.addToMyDestinations(destinationSchema);
 
             let toSend = destinationSchema.convertForClient();
             this.emit("newDestination", toSend);
-            await this.joinToRoom(destinationSchema._id);
+            this.joinToRoom(destinationSchema._id);
 
         } catch (error) {
             this.emit("error", {error});
@@ -67,7 +67,7 @@ class Emitter {
         let destinationId = data.destinationId;
         try {
             let destination = await this.participant.joinToDestination(destinationId);
-            await this.joinToRoom(destinationId);
+            this.joinToRoom(destinationId);
 
             this.emitToRoom(
                 destinationId,
@@ -84,11 +84,12 @@ class Emitter {
             let destinations = await
                 this.participant.getMyDestinations();
             console.log(destinations.length);
-            for(let i =0;i<destinations.length;i++){
-                let destinationId=destinations[i];
-                let destinationSchema=await Destination.findById(destinationId);
+
+            for (let i = 0; i < destinations.length; i++) {
+                let destinationId = destinations[i];
+                let destinationSchema = await Destination.findById(destinationId);
                 this.emit("myDestinations", destinationSchema.convertForClient());
-                //await this.joinToRoom(destinationId);
+                this.joinToRoom("destinationId");
             }
             /*for(let destinationId of destinations){
                 let destinationSchema=await Destination.findById(destinationId);
@@ -106,6 +107,7 @@ class Emitter {
             console.log(error);
         }
     }
+
 
     async onCompleteDestination(data) {
         try {
@@ -128,8 +130,9 @@ class Emitter {
             throw e;
         }
     }
-    onDisconnect(reason){
-        console.log("disconnect:" +this.participant.userId + " reason: " + reason);
+
+    onDisconnect(reason) {
+        console.log("disconnect:" + this.participant.userId + " reason: " + reason);
     }
 
     emitToRoom(room, even, args) {
@@ -141,14 +144,10 @@ class Emitter {
 
     }
 
-    async joinToRoom (destinationId) {
-        try {
-            await this.socket.join(destinationId)
-        }catch (e) {
-            throw e;
-        }
-
+    joinToRoom(destinationId) {
+        this.socket.join(destinationId);
     }
+
 
 }
 

@@ -1,16 +1,23 @@
+"use strict";
+
 const Participant = require("./Participant");
 const Emitter = require("./Emitter");
 
+let IO = require("socket.io");
+
 class Concurrent {
 
-    constructor(io) {
-        this.io = io;
+    constructor(server) {
+
         this.participants = [];
-        io.on("connection", this.onConnect);
+        this.io = IO.listen(server);
+
+        this.io.on("connection",  (socket) =>this.onConnect(socket));
 
     }
 
     onConnect(socket) {
+
         console.log("new connection, sockedId: " + socket.id);
         let emiter = new Emitter(this.io, socket);
 
