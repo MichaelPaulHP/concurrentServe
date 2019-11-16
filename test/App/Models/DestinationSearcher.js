@@ -1,4 +1,5 @@
 const Destination = require("../../../App/Models/Destination");
+const DestinationSchema = require("../../../App/Models/Schemas/DestinationSchema");
 const DestinationSearcher = require("../../../App/Models/DestinationSearcher");
 const configDB = require("../../../Config/database");
 const mongoose = require("mongoose");
@@ -76,6 +77,39 @@ describe('Destination Searcher', function () {
             console.log(destinations);
         });
 
+    });
+    describe('check results', function () {
+        let data={
+            destinationLatitude: -16.3814477,
+            destinationLongitude: -71.55573849999999,
+            originLatitude: -16.4273878,
+            originLongitude: -71.543147,
+
+        };
+        let origin={
+            latitude:data.originLatitude,
+            longitude:data.originLongitude
+        };
+        let destination={
+            latitude:data.destinationLatitude,
+            longitude:data.destinationLongitude
+        };
+        it('for cliet result', async () => {
+            let destinations= await DestinationSearcher.findDestination(origin,destination);
+            assert.exists(destinations);
+            assert.isNotEmpty(destinations);
+            let schemaFake=destinations[0];
+            //console.log(schemaFake);
+            let schema= new DestinationSchema();
+
+            let toSend = schema.convertForClient(schemaFake);
+
+            assert.equal(schemaFake._id,toSend.destinationId);
+            assert.equal(schemaFake.dist,toSend.dist);
+            assert.equal(schemaFake.createBy,toSend.userId);
+
+
+        });
     });
 
 });

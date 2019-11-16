@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0b62d463-8356-4ec3-a37e-7edf6214d038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Models/Concurrent.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Concurrent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/DestinationSearcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/DestinationSearcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Models/Emitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Emitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/App/Models/DestinationSearcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/App/Models/DestinationSearcher.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,26 +23,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="366">
+              <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+        <entry file="file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="154">
+              <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="189" column="33" lean-forward="true" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -75,20 +85,20 @@
         <option value="$PROJECT_DIR$/App/Models/Schemas/ParticipantSchema.js" />
         <option value="$PROJECT_DIR$/test/Config/MongoDB.js" />
         <option value="$PROJECT_DIR$/App/Models/Interactor.js" />
-        <option value="$PROJECT_DIR$/test/App/Models/DestinationSearcher.js" />
-        <option value="$PROJECT_DIR$/App/Models/DestinationSearcher.js" />
         <option value="$PROJECT_DIR$/App/Models/Schemas/UserSchema.js" />
         <option value="$PROJECT_DIR$/App/Controllers/UserController.js" />
         <option value="$PROJECT_DIR$/testSockt.html" />
-        <option value="$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js" />
         <option value="$PROJECT_DIR$/test/App/Models/Destination.js" />
         <option value="$PROJECT_DIR$/App/Models/Destination.js" />
         <option value="$PROJECT_DIR$/test/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/test/App/Models/Concurrent.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/App/Models/Emitter.js" />
         <option value="$PROJECT_DIR$/App/Models/Concurrent.js" />
+        <option value="$PROJECT_DIR$/test/App/Models/DestinationSearcher.js" />
+        <option value="$PROJECT_DIR$/App/Models/Emitter.js" />
+        <option value="$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js" />
+        <option value="$PROJECT_DIR$/App/Models/DestinationSearcher.js" />
       </list>
     </option>
   </component>
@@ -198,7 +208,7 @@
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="Destination.fill  Attributes" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="Destination Searcher.check results" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -206,11 +216,11 @@
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/Destination.js</test-file>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/App/Models/DestinationSearcher.js</test-file>
       <test-names>
-        <name value="Destination" />
-        <name value="fill  Attributes" />
+        <name value="Destination Searcher" />
+        <name value="check results" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -275,10 +285,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="Mocha.Destination Searcher.check results" />
         <item itemvalue="Mocha.socket io client" />
         <item itemvalue="Mocha.socket connect" />
         <item itemvalue="Mocha.Participant Test.get my destinations" />
-        <item itemvalue="Mocha.Destination.fill  Attributes" />
       </list>
     </recent_temporary>
   </component>
@@ -305,29 +315,12 @@
       <workItem from="1573671254948" duration="7015000" />
       <workItem from="1573768170304" duration="2571000" />
       <workItem from="1573777862384" duration="14483000" />
-      <workItem from="1573855818265" duration="9392000" />
+      <workItem from="1573855818265" duration="9723000" />
+      <workItem from="1573874654747" duration="5217000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 46m 20s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Participant_Test_get_my_destinations - 2019.11.14 at 20h 46m 34s.xml">
-      <configuration name="Participant Test.get my destinations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="socket_connect - 2019.11.14 at 21h 40m 48s.xml">
-      <configuration name="socket connect" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="socket_connect - 2019.11.14 at 21h 41m 35s.xml">
-      <configuration name="socket connect" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="socket_io_client - 2019.11.14 at 21h 57m 14s.xml">
-      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="socket_io_client - 2019.11.14 at 21h 58m 05s.xml">
-      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="socket_io_client - 2019.11.14 at 21h 59m 58s.xml">
       <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -340,9 +333,27 @@
     <history-entry file="socket_io_client - 2019.11.14 at 22h 42m 21s.xml">
       <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 25m 42s.xml">
+      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 26m 55s.xml">
+      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 29m 30s.xml">
+      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 36m 46s.xml">
+      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 38m 22s.xml">
+      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 44m 11s.xml">
+      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159170000" />
+    <option name="totallyTimeSpent" value="164718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,7 +379,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3287483" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.2545969" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.48090523" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.427157" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -407,7 +418,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/App/Models/Emitter.js</url>
-          <line>104</line>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js</url>
+          <line>97</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -530,30 +548,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io-mock/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="94" column="10" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
@@ -601,24 +598,45 @@
     <entry file="file://$PROJECT_DIR$/App/Routes.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
+        <state relative-caret-position="742">
           <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="320">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/DestinationSearcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="189" column="33" lean-forward="true" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/DestinationSearcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
         </state>
       </provider>
     </entry>

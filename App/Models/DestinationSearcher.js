@@ -51,7 +51,7 @@ class DestinationSearcher {
             {
                 $geoNear: {
                     near: { type: "Point", coordinates: [ destination.longitude , destination.latitude ] },
-                    distanceField: "dist.calculated",
+                    distanceField: "dist",
                     maxDistance: MAX_DISTANCE,
                     query: { isActive: true },
                     spherical: true,

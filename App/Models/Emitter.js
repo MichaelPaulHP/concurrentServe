@@ -3,7 +3,7 @@
 const Participant = require("./Participant");
 const DestinationSearcher = require("./DestinationSearcher");
 const Destination = require("./Destination");
-
+const DestinationSchema = require("./Schemas/DestinationSchema");
 class Emitter {
 
     constructor(io, socket) {
@@ -41,9 +41,15 @@ class Emitter {
         let destinations = await
             DestinationSearcher.findDestination(origin, destination);
 
-        for (let destinationSchema of destinations) {
-            this.emit("destinationsFound", destinationSchema.convertForClient());
+        for (let i = 0; i < destinations.length ; i++) {
+            let destinationSchema =new DestinationSchema();
+            let toSend= destinationSchema.convertForClient(destinations[i]);
+            this.emit("destinationsFound",toSend);
         }
+
+        /*for (let destinationSchema of destinations) {
+
+        }*/
     }
 
     async onNewDestination(data) {

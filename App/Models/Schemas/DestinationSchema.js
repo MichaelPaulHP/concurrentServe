@@ -81,7 +81,8 @@ DestinationSchema.index({destinationPoint:"2dsphere"});
     public String chatId;
  */
 DestinationSchema.methods.convertForClient = function () {
-    return {
+    return forClient(this);
+    /*return {
         destinationId: this.id,
         name: this.name,
         color: this.color,
@@ -94,6 +95,10 @@ DestinationSchema.methods.convertForClient = function () {
         userId: this.createBy,
         dist:this.dist
     };
+    */
+};
+DestinationSchema.methods.convertForClient = function (destinationSchema) {
+    return forClient(destinationSchema);
 };
 
 DestinationSchema.methods.fillAttributes = function (data) {
@@ -170,5 +175,20 @@ DestinationSchema.methods.isInRangeArray = function (data,distance) {
         distanceDestinations<= distance
     );
 };*/
+function forClient(destinationSchema){
+    return {
+        destinationId: destinationSchema._id,
+        name: destinationSchema.name,
+        color: destinationSchema.color,
+        numUsers: destinationSchema.numUsers,
+        destinationLatitude: destinationSchema.destinationPoint.coordinates[1],
+        destinationLongitude: destinationSchema.destinationPoint.coordinates[0],
+        originLatitude: destinationSchema.originPoint.coordinates[1],
+        originLongitude: destinationSchema.originPoint.coordinates[0],
+        chatId: destinationSchema.chatId,
+        userId: destinationSchema.createBy,
+        dist:destinationSchema.dist,
+    };
+}
 
 module.exports = mongoose.model('DestinationSchema', DestinationSchema);
