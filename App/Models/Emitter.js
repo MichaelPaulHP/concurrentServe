@@ -6,11 +6,11 @@ const Destination = require("./Destination");
 const DestinationSchema = require("./Schemas/DestinationSchema");
 class Emitter {
 
-    constructor(io, socket) {
+    constructor(participant,io, socket) {
         this.io = io;
         this.socket = socket;
-        this.participant = new Participant("ee");//Participant.createParticipant("20215423");
-        socket.on("init",(data)=> this.init(data));
+        this.participant = participant;//Participant.createParticipant("20215423");
+        //socket.on("init",(data)=> this.init(data));
         socket.on("findDestinations",(data)=> this.onFindDestinations(data));
         socket.on("newDestination",(data)=> this.onNewDestination(data));
         socket.on("joinToDestination",(data)=> this.onJoinToDestination(data));
@@ -19,14 +19,14 @@ class Emitter {
 
     }
 
-    init(data) {
+    /*init(data) {
         // this is Socket
         let userName = data.userName;
         let userId = data.userId;
         this.participant = new Participant(userId, userName);
         console.log("Participant: " + userName + " " + userId);
 
-    }
+    }*/
 
 
     async onFindDestinations(data) {
