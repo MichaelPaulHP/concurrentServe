@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0b62d463-8356-4ec3-a37e-7edf6214d038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Models/Concurrent.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Concurrent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Models/Emitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Emitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Models/Track.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Tracker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Destination.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Destination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Participant.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Participant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/App/Models/Participant.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/App/Models/Participant.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,30 +20,47 @@
   </component>
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+            <state relative-caret-position="300">
+              <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
+        <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="60">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="36" />
+              <folding>
+                <element signature="e#1659#2221#0" />
+                <element signature="e#2280#2655#0" />
+                <element signature="e#2700#3031#0" />
+                <element signature="e#3078#3313#0" />
+                <element signature="e#3382#3878#0" />
+                <element signature="e#3396#3816#0" />
+                <element signature="e#3945#4711#0" />
+                <element signature="e#4778#5132#0" />
+                <element signature="e#6198#6901#0" />
+                <element signature="e#6945#7661#0" />
+                <element signature="e#7715#7954#0" />
+                <element signature="e#8015#8426#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Models/Tracker.js">
+        <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="-253">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+              <folding>
+                <element signature="e#295#683#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,17 +68,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Models/Participant.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="239">
+              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
+        <entry file="file://$PROJECT_DIR$/test/App/Models/Destination.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Models/Destination.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -89,7 +117,6 @@
         <option value="$PROJECT_DIR$/App/Models/Schemas/Destination.js" />
         <option value="$PROJECT_DIR$/App/Models/User.js" />
         <option value="$PROJECT_DIR$/test/Config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/App/Models/Schemas/ParticipantSchema.js" />
         <option value="$PROJECT_DIR$/test/Config/MongoDB.js" />
         <option value="$PROJECT_DIR$/App/Models/Interactor.js" />
@@ -97,9 +124,6 @@
         <option value="$PROJECT_DIR$/App/Controllers/UserController.js" />
         <option value="$PROJECT_DIR$/testSockt.html" />
         <option value="$PROJECT_DIR$/test/App/Models/Destination.js" />
-        <option value="$PROJECT_DIR$/App/Models/Destination.js" />
-        <option value="$PROJECT_DIR$/test/App/Models/Participant.js" />
-        <option value="$PROJECT_DIR$/App/Models/Participant.js" />
         <option value="$PROJECT_DIR$/test/App/Models/Concurrent.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/App/Models/DestinationSearcher.js" />
@@ -108,6 +132,13 @@
         <option value="$PROJECT_DIR$/App/Models/Concurrent.js" />
         <option value="$PROJECT_DIR$/App/Models/Emitter.js" />
         <option value="$PROJECT_DIR$/App/Models/Tracker.js" />
+        <option value="$PROJECT_DIR$/App/Utils/MongoDB.js" />
+        <option value="$PROJECT_DIR$/test/App/Models/Participant.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/App/Models/ParticipantJest.js" />
+        <option value="$PROJECT_DIR$/App/Models/Destination.js" />
+        <option value="$PROJECT_DIR$/App/Models/Participant.js" />
+        <option value="$PROJECT_DIR$/test/App/Models/Participant.test.js" />
       </list>
     </option>
   </component>
@@ -117,7 +148,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="109" />
     <option name="width" value="1168" />
@@ -164,6 +195,12 @@
             <path>
               <item name="ConcurrentServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConcurrentServer" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConcurrentServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConcurrentServer" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,6 +226,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -213,27 +251,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
-    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Jest.participant (1)">
+    <configuration name="Participant.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/App/Models/Participant.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="Destination Searcher.check results" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/DestinationSearcher.js</test-file>
+    <configuration name="participant (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/App/Models/Participant.test.js" />
       <test-names>
-        <name value="Destination Searcher" />
-        <name value="check results" />
+        <test-name value="participant" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Participant Test.get my destinations" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="participant" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/App/Models/ParticipantJest.js" />
+      <test-names>
+        <test-name value="participant" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="Participant Test.join to destination" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -245,37 +303,7 @@
       <test-file>$PROJECT_DIR$/test/App/Models/Participant.js</test-file>
       <test-names>
         <name value="Participant Test" />
-        <name value="get my destinations" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="socket connect" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/Concurrent.js</test-file>
-      <test-names>
-        <name value="socket connect" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="socket io client" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/App/Models/Concurrent.js</test-file>
-      <test-names>
-        <name value="socket io client" />
+        <name value="join to destination" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -293,11 +321,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.participant (1)" />
+        <item itemvalue="Jest.Participant.test.js" />
+        <item itemvalue="Jest.participant" />
+        <item itemvalue="Mocha.Participant Test.join to destination" />
         <item itemvalue="Node.js.server.js" />
-        <item itemvalue="Mocha.Destination Searcher.check results" />
-        <item itemvalue="Mocha.socket io client" />
-        <item itemvalue="Mocha.socket connect" />
-        <item itemvalue="Mocha.Participant Test.get my destinations" />
       </list>
     </recent_temporary>
   </component>
@@ -326,44 +354,47 @@
       <workItem from="1573777862384" duration="14483000" />
       <workItem from="1573855818265" duration="9723000" />
       <workItem from="1573874654747" duration="8462000" />
-      <workItem from="1574193930589" duration="4985000" />
+      <workItem from="1574193930589" duration="5337000" />
+      <workItem from="1574219692307" duration="1463000" />
+      <workItem from="1574399555677" duration="2129000" />
+      <workItem from="1574432580708" duration="11784000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="socket_io_client - 2019.11.14 at 21h 59m 58s.xml">
-      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 11h 46m 15s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="socket_io_client - 2019.11.14 at 22h 03m 08s.xml">
-      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 06m 02s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="socket_io_client - 2019.11.14 at 22h 03m 43s.xml">
-      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 07m 03s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="socket_io_client - 2019.11.14 at 22h 42m 21s.xml">
-      <configuration name="socket io client" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 08m 03s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 25m 42s.xml">
-      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 10m 40s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 26m 55s.xml">
-      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 12m 13s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 29m 30s.xml">
-      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 15m 06s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 36m 46s.xml">
-      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 26m 04s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 38m 22s.xml">
-      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 37m 12s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Destination_Searcher_check_results - 2019.11.15 at 23h 44m 11s.xml">
-      <configuration name="Destination Searcher.check results" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="participant_(1) - 2019.11.22 at 12h 41m 00s.xml">
+      <configuration name="participant (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172948000" />
+    <option name="totallyTimeSpent" value="188676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,17 +414,17 @@
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.29104477" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.33562586" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.2036775" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3287483" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.44978783" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3281471" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.38896745" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4596888" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.3287483" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3281471" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -428,9 +459,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/App/Models/Tracker.js</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
+          <line>25</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/App/Models/Participant.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/App/Models/Participant.test.js</url>
+          <line>67</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -477,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -535,36 +570,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/Destination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io-mock/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="90" column="85" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="85" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/App/Models/Concurrent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
           <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Destination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -606,34 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Participant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Localization.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -641,10 +627,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Concurrent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Tracker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="640">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Utils/MongoDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Schemas/DestinationSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/chai/chai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="9310" selection-start-line="9310" selection-end-line="9310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Destination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Destination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Emitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="36" />
+          <folding>
+            <element signature="e#1659#2221#0" />
+            <element signature="e#2280#2655#0" />
+            <element signature="e#2700#3031#0" />
+            <element signature="e#3078#3313#0" />
+            <element signature="e#3382#3878#0" />
+            <element signature="e#3396#3816#0" />
+            <element signature="e#3945#4711#0" />
+            <element signature="e#4778#5132#0" />
+            <element signature="e#6198#6901#0" />
+            <element signature="e#6945#7661#0" />
+            <element signature="e#7715#7954#0" />
+            <element signature="e#8015#8426#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Participant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/App/Models/Participant.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <folding>
+            <element signature="e#295#683#0" />
+          </folding>
         </state>
       </provider>
     </entry>

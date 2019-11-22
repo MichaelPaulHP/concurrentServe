@@ -42,13 +42,16 @@ class Participant {
     }
 
     async addToMyDestinations(destinationSchema) {
+
         try {
             const participantSchema = await
                 ParticipantSchema.findOneAndUpdate(
                     {googleId: this.userId},
                     {$push: {destinations: destinationSchema}},
                     {new:true});
+
             this.myDestinations.push(destinationSchema);
+
             return participantSchema;
         } catch (e) {
             throw e;
@@ -59,9 +62,11 @@ class Participant {
     async joinToDestination(destinationId) {
         try {
             let destinationSchema = await
-                Destination.addParticipantToDestination(
-                    this.userId,
-                    destinationId);
+                Destination.addParticipantToDestination
+                (
+                    {userName: this.name,userId:this.userId},
+                    destinationId
+                );
 
             return await this.addToMyDestinations(destinationSchema);
 
@@ -113,7 +118,15 @@ class Participant {
             throw e;
         }
     }
+    static async delete(googleId){
+        try {
 
+            let participantSchemaDelete= await ParticipantSchema.findByIdAndDelete(googleId);
+            return participantSchemaDelete;
+        }catch (e) {
+            throw e;
+        }
+    }
 }
 
 module.exports = Participant;

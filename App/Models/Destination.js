@@ -64,12 +64,6 @@ class Destination {
 
         try {
 
-            /*
-            * {
-            *  $and:[{$addToSet: {participants: user}},{$inc: {numUsers: 1}}]
-
-                    }
-            * */
             let destinationUpdated = await
                 DestinationSchema.findByIdAndUpdate(
                     destinationId, {
@@ -134,6 +128,20 @@ class Destination {
         }
 
     }
+    static async delete( destinationId) {
 
+        try {
+
+            let destinationDeleted = await
+                DestinationSchema.findByIdAndDelete(
+                    destinationId);
+
+            return destinationDeleted;
+
+        } catch (e) {
+            throw e;
+        }
+
+    }
 }
 module.exports = Destination;
