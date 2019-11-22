@@ -43,7 +43,7 @@ describe('participant', () => {
 
 
     async function createParticipant() {
-        let googleId="nnnnnnnnnnnn";
+        let googleId="nnn9898nnnnnnnnn";
         participant = await Participant.createParticipant(googleId, googleId);
 
     }
@@ -66,8 +66,9 @@ describe('participant', () => {
         try {
             //expect.assertions(6);
             let destinationId=destinationStored._id;
-            let participantSchema = await participant.joinToDestination(destinationId);
+            let {destinationSchema,participantSchema} = await participant.joinToDestination(destinationId);
             assert.exists(participantSchema);
+            assert.exists(destinationSchema);
 
             let destinations = participantSchema.destinations;
 
@@ -75,9 +76,7 @@ describe('participant', () => {
             let destinationOne = destinations[0];
             assert.equal(destinationOne._id.toString(), destinationId.toString());
 
-            let destination = await Destination.findById(destinationId);
-            assert.exists(destination);
-            let participants=destination.participants;
+            let participants=destinationSchema.participants;
 
             assert.equal(participants.length, 1);
 

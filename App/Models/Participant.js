@@ -67,8 +67,8 @@ class Participant {
                     {userName: this.name,userId:this.userId},
                     destinationId
                 );
-
-            return await this.addToMyDestinations(destinationSchema);
+            let participantSchema=await this.addToMyDestinations(destinationSchema);
+            return {destinationSchema,participantSchema}
 
         } catch (e) {
             throw e;

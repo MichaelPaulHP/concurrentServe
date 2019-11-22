@@ -72,14 +72,20 @@ class Emitter {
     async onJoinToDestination(data) {
         let destinationId = data.destinationId;
         try {
-            let destination = await this.participant.joinToDestination(destinationId);
+            let {destinationSchema,participantSchema}=await
+                this.participant.joinToDestination(destinationId);
+
             this.joinToRoom(destinationId);
 
+            let destinationForClient=destinationSchema.convertForClient();
+
+            this.emit("newDestination",destinationForClient);
             this.emitToRoom(
                 destinationId,
                 "joinToDestination",
-                destination.convertForClient()
+                destinationForClient
             )
+
         } catch (error) {
             this.emit("error", {error});
         }
@@ -97,16 +103,6 @@ class Emitter {
                 this.emit("myDestinations", destinationSchema.convertForClient());
                 this.joinToRoom(destinationSchema._id);
             }
-            /*for(let destinationId of destinations){
-                let destinationSchema=await Destination.findById(destinationId);
-                this.joinToRoom(destinationId,null);
-                this.emit("myDestinations", destinationSchema.convertForClient());
-
-            }*/
-
-            /*destinations.forEach(async (destinationId) => {
-
-            });*/
 
         } catch (error) {
             //this.emit("error", {error});
@@ -142,7 +138,7 @@ class Emitter {
     }
 
     emitToRoom(room, even, args) {
-        this.io.in(room).emit(even, args);
+        this.socket.to(room).emit(even, args);
     }
 
     emit(even, args) {
